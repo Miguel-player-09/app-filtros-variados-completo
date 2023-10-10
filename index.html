@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="./Fotoram.io.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de filtros</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body background="./fundo.jpg">
+    <center>
+        <h1 class="btn btn-info title">App de filtros variados</h1>
+        <br><br>
+        <h3>escolha um filtro</h3>
+        
+        <span>
+            <button class="botao_nariz" id="nariz1" onclick="Nariz1()"><img src="./nariz1.png" alt="nariz de palhaço"></button>
+            <button class="botao_nariz" id="nariz2" onclick="Nariz2()"><img src="./nariz2.png" alt="óculos e bigode"></button>
+            <button class="botao_nariz" id="nariz3" onclick="Nariz3()"><img src="./nariz3.png" alt="nariz de porco"></button>
+            <button class="botao_nariz" id="nariz4" onclick="Nariz4()"><img src="./nariz4.png" alt="nariz de palhaço com óculos"></button>
+            <button class="botao_nariz" id="nariz5" onclick="Nariz5()"><img src="./nariz5.png" alt="bigode"></button>
+            <button class="botao_nariz" id="sem_nariz" onclick="removerNariz()"> remover filtro</button>
+        </span>
+        <br>
+        <button class="btn btn-success" onclick="takeSnapshot()">tirar foto</button>
+        <br>
+        <canvas></canvas>
+    </center>
+</body>
+
+</html>
